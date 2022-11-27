@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+:root{
+  --background: #E8EEF1;
+  --font:#1E3D58;
+  --tertiary: #FFFFFF;
+  --button: #057DCD;
+}
+a{
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 150px;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  z-index:5;
+}
+.nav-link{
+  display: inline;
+}
+#header-img{
+  width: 200px;
+}
+.nav-link{
+  text-decoration: none;
+  color: var(--tertiary);
+  font-size: 20px;
+}
+.landing-page{
+  display: flex;
+  flex-direction: column;
+  padding: 350px 0 0 100px;
+  position: relative;
+}
+.nav-link:hover{
+  text-decoration: underline;
+  color: var(--tertiary);
+}
+.intro{
+  font-size: 25px;
+  font-weight: 600;
+}
+.name{
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--font);
+}
+.description{
+  min-width: 400px;
+  max-width: 700px;
+  font-size: 20px;
+  width: 100%;
+}
+button{
+  width: 200px;
+  height: 50px;
+  background-color: var(--button);
+  border: 1px solid var(--button);
+  border-radius: 10px;
+  color: var(--tertiary);
+  margin-top: 20px;
+  font-size: 20px;
+}
+button:hover{
+  background:transparent;
+  color: #000;
+}
+.image{
+  margin-top: -300px;
+  max-width: 300px;
+  width: 100%;
+  float: right;
+  overflow: hidden;
+}
+
+.service-page{
+  text-align:center;
+  margin-top: 500px;
+  margin-bottom: 100px;
+}
+.service-page h1{
+  font-weight: 700;
+  font-size: 50px;
+  color: var(--font);
+}
+.service-page p{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  background-color: var(--background);
+  border: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card1, .card2, .card3{
+  width: 500px;
+  height: 400px;
+  background-color: var(--font);
+  margin: 10px; 
+  border-radius: 20px;
+  color: var(--tertiary);
+}
+.card1 h1, .card2 h1, .card3 h1{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 20px;
+}
+.card1 p, .card2 p, .card3 p{
+  text-align: center;
+  margin-left: 40px;
+  margin-right:  40px;
+}
+hr{
+  width: 80%;
+  margin: auto;
+  border: 2px solid var(--tertiary);
+}
+.contact-page{
+  text-align: center;
+  margin-top: 200px;
+}
+.contact-page h1{
+  font-size: 50px;
+  font-weight: 700;
+  color:var(--font);
+}
+#form{
+  display: flex;
+  flex-direction:  column;
+  width: 500px;
+  margin: 200px;
+}
+label{
+  font-size: 40px;
+  font-weight: 700;
+}
+input[type="text"], input[type="email"]{
+  background-color: var(--font);
+  border: 2px solid var(--font);
+  height: 50px; 
+  padding-left: 20px; 
+  border-radius: 10px;
+  color: var(--tertiary);
+  margin-bottom: 20px;
+}
+input[type="submit"]{
+  width: 200px;
+  height: 50px;
+  background-color: var(--button);
+  border: 1px solid var(--button);
+  border-radius: 10px;
+  color: var(--tertiary);
+  margin-top: 20px;
+  font-size: 20px;
+}
+input[type="submit"]:hover{
+  background:transparent;
+  color: #000;
+}
+#video{
+  float: right;
+  margin: 20px;
+  margin-top: -600px;
+  margin-right: 200px;
+}
+@media only screen and (max-width: 800px){
+
+#header-img{
+  width: 100px;
+}
+ul{
+  margin-top: 20px;
+  margin-left: 200px;
+}
+li{
+  padding: 20px;
+  width: 100%;
+}
+.nav-link{
+  font-size: 20px;
+}
+.landing-page{
+  padding: 350px 0 0 30px;
+  width: 100%;
+  min-width: 300px;
+}
+.intro{
+  font-size: 25px;
+  font-weight: 600;
+}
+.name{
+  font-size: 60px;
+  font-weight: 700;
+}
+.description{
+  width: 100%;
+  max-width: 600px;
+  font-size: 20px;
+}
+.service-page h1{
+  font-size: 40px;
+}
+.service-page p{
+  font-size: 20px;
+}
+.card{
+  flex-direction: column;
+}
+.card1, .card2, .card3{
+  margin-bottom: 100px; 
+  
+}
+#form{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+::placeholder{
+  color: var(--tertiary);
+}
+#video{
+  margin: 20px;
+  margin-top: 100px;
+  margin-right: 200px;
+  width: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
+
+@media only screen and (max-width: 425px){
+  #header-img{
+    width: 80px;
+  }
+  .nav-link{
+    font-size: 15px;
+  }
+  .landing-page{
+    width: 300px;
+    margin-left: -20px;
+  }
+  .intro{
+    font-size: 15px;
+  }
+  .name{
+    font-size: 50px;
+  }
+  .description{
+  font-size: 13px;
+}
+  button{
+    width: 150px;
+  }
+  .card1, .card2, .card3{
+  width: 300px;
+  overflow: hidden;
+  height: 560px;
+}
+#form{
+  margin: 10px;
+}
+label{
+  font-size: 20px;
+}
+  input[type="text"],input[type="email"]{
+    width: 380px;
+  }
+  input[type="submit"]{
+    width: 150px;
+    font-size: 18px;
+  }
+  #video{
+    display: none;
+  }
+}
